@@ -56,17 +56,17 @@ function convertirMoneda() {
         usd: {
             eur: 0.93,
             ars: 350.19,
-            yen: 0
+            yen: 1
         },
         eur: {
             usd: 1.08,
             ars: 378.08,
-            yen: 0
+            yen: 1
         },
         ars: {
             usd: 0.0029,
             eur: 0.0026,
-            yen: 0
+            yen: 1
         },
         yen: {
             usd: 0.0068,
@@ -79,4 +79,75 @@ function convertirMoneda() {
     const result = amount * conversionRate;
     
     document.getElementById('resultado').textContent = `Resultado: ${amount} ${fromCurrency} equivale a ${result.toFixed(3)} ${toCurrency}`;
+}
+
+// Calculadora de Prestamos
+
+function calcularPrestamo() {
+    limpiarTabla()
+    let tasaMensual = 9.83 / 100;
+
+    var inpMonto = document.getElementById("monto");
+    let monto = parseInt(inpMonto.value);
+
+    var inpCuotas = document.getElementById("cuotas");
+    let cantCuotas = parseInt(inpCuotas.value);
+
+    let cuota = (tasaMensual * monto) / (1 - (1 + tasaMensual) ** -cantCuotas);
+
+    let saldo = monto;
+    let interes = monto * tasaMensual * cantCuotas;
+
+    let tabla = document.getElementById("tablaCuotas");
+
+    for (let i = 0; i < cantCuotas; i++) {
+        let columna = document.createElement("tr");
+        columna.setAttribute("class", "datos")
+
+        let celdaNumCuota = document.createElement("td")
+        celdaNumCuota.innerHTML = i + 1
+        columna.appendChild(celdaNumCuota)
+
+        let celdaSaldo = document.createElement("td");
+        celdaSaldo.innerHTML = saldo.toFixed(2);
+        columna.appendChild(celdaSaldo);
+
+        let celdaInteres = document.createElement("td");
+        celdaInteres.innerHTML = interes.toFixed(2);
+        columna.appendChild(celdaInteres);
+
+        let celdaCuota = document.createElement("td");
+        celdaCuota.innerHTML = cuota.toFixed(2);
+        columna.appendChild(celdaCuota);
+
+        tabla.appendChild(columna);
+
+        saldo -= cuota;
+    }
+}
+
+function limpiarTabla() {
+    let tabla = document.getElementById("tablaCuotas")
+    tabla.innerHTML=""
+
+    let columnaHead = document.createElement("tr")
+
+    let celdaNumHead = document.createElement("th")
+    celdaNumHead.innerHTML = "Numero de Cuota:"
+    columnaHead.appendChild(celdaNumHead)
+
+    let celdaSaldoHead = document.createElement("th")
+    celdaSaldoHead.innerHTML = "Saldo:"
+    columnaHead.appendChild(celdaSaldoHead)
+
+
+    let celdaInteresHead = document.createElement("th")
+    celdaInteresHead.innerHTML = "Interes:"
+    columnaHead.appendChild(celdaInteresHead)
+
+    let celdaCuotaHead = document.createElement("th")
+    celdaCuotaHead.innerHTML = "Cuota:"
+    columnaHead.appendChild(celdaCuotaHead)
+
+    tabla.appendChild(columnaHead)
 }
