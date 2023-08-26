@@ -10,6 +10,7 @@ const images = document.querySelectorAll('#carousel img');
 
 
 // menu todas las imágenes excepto la primera
+
 for (let i = 1; i < images.length; i++) {
     images[i].style.display = 'none';
 }
@@ -30,6 +31,8 @@ nextBtn && nextBtn.addEventListener('click', () => {
     updateCarousel();
 });
 
+// Carousel de fotos
+
 function updateCarousel() {
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = 'none';
@@ -41,3 +44,39 @@ menuBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
     menuBtn.classList.toggle('active');
 });
+
+// Calculadora de moneda
+
+function convertirMoneda() {
+    const amount = parseFloat(document.getElementById('cantidad').value);
+    const fromCurrency = document.getElementById('fromMoneda').value;
+    const toCurrency = document.getElementById('toMoneda').value;
+    
+    const exchangeRates = {
+        usd: {
+            eur: 0.93,
+            ars: 350.19,
+            yen: 0
+        },
+        eur: {
+            usd: 1.08,
+            ars: 378.08,
+            yen: 0
+        },
+        ars: {
+            usd: 0.0029,
+            eur: 0.0026,
+            yen: 0
+        },
+        yen: {
+            usd: 0.0068,
+            eur: 0.0063,
+            ars: 2.39
+        }
+    };
+    
+    const conversionRate = exchangeRates[fromCurrency][toCurrency];
+    const result = amount * conversionRate;
+    
+    document.getElementById('resultado').textContent = `Resultado: ${amount} ${fromCurrency} equivale a ${result.toFixed(3)} ${toCurrency}`;
+}
