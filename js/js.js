@@ -56,17 +56,17 @@ function convertirMoneda() {
         usd: {
             eur: 0.93,
             ars: 350.19,
-            yen: 1
+            yen: 146.44
         },
         eur: {
             usd: 1.08,
             ars: 378.08,
-            yen: 1
+            yen: 158.09
         },
         ars: {
             usd: 0.0029,
             eur: 0.0026,
-            yen: 1
+            yen: 0.42
         },
         yen: {
             usd: 0.0068,
