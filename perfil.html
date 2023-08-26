@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>CapitalBANK</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
         <div class="navbar">
             <button id="menu-btn">Menu</button>
             <div class="navbar-title">CapitalBANK</div>
         </div>
-
         <div id="menu">
             <a href="./perfil.html">Perfil</a>
             <a href="./homepage.html">Inicio</a>
@@ -23,25 +21,35 @@
         </div>
     </header>
     <main>
-        <section id="titulo">
-            <img src="https://static.vecteezy.com/system/resources/previews/020/194/761/non_2x/bank-icon-for-your-website-design-logo-app-ui-free-vector.jpg" alt="Logo Banco">
-            <h1>CapitalBANK</h1>
+        <section>
+            <div class="perfil">
+                <h2 id="tituloPerfil">PERFIL</h2>
+            </div>
+            <table>
+                <tr>
+                  <th>Nombre</th>
+                  <td>Juancito Perez</td>
+                </tr>
+                <tr>
+                  <th>Correo</th>
+                  <td>correo@gmail.com</td>
+                </tr>
+                <tr>
+                  <th>Edad</th>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <th>País</th>
+                  <td>Argentina</td>
+                </tr>
+                <tr>
+                  <th>Género</th>
+                  <td>Masculino</td>
+                </tr>
+              </table>
         </section>
-
-        <section id="sectioninput">
-                <label for="usuario">Usuario</label><br>
-                <input type="text" id="usuario" name="usuario"><br>
-
-                <label for="contraseña">Contraseña</label><br>
-                <input type="password" id="contraseña" name="contraseña"><br>
-
-                <button type="submit">Iniciar Sesión</button>
-                
-                <p>¿Aun no tiene cuenta?</p>
-                <a href="registrarse.html">Registrate acá</a>
-        </section>
+        <br>
     </main>
-
     <footer>
         <p class="copy">© Copyright 2023</p>
         <p class="copy">
@@ -49,6 +57,6 @@
             <a href="" target="_blank">CapitalBANK</a>
         </p>
     </footer>
-    <script src="./js/js.js"></script>
+    <script src="js/js.js"></script>
 </body>
 </html>
