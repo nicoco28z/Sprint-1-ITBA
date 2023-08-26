@@ -47,7 +47,6 @@
                 <option value="yen">Yen japonés (JPY)</option>
             </select>
             
-            
             <label for="toMoneda">A:</label>
             <select id="toMoneda">
                 <option value="usd">Dólar (USD)</option>
@@ -61,19 +60,38 @@
             <p id="resultado">Resultado:</p>
             
         </section>
+        <br>
+        <br>
+
+        <section>
+            <p>Ingrese el monto:</p>
+            <label for="monto">$ </label><input type="number" name="monto" id="monto">
+            <br>
+            <label for="cuotas">Cantidad De Cuotas</label>
+            <select name="cuotas" id="cuotas">
+                <option value=3>3</option>
+                <option value=6>6</option>
+                <option value=12>12</option>
+                <option value=24>24</option>
+                <option value=36>36</option>
+            </select>
+            <br>
+            <button id="calcular" onclick="calcularPrestamo()">Calcular</button>
+            <hr>
+            <table id="tablaCuotas" border>
+            </table>
+        </section>
     </main>
     <footer>
-        <did>
-            <did>
-                <h1>Contacto</h1>>
-                <ul>
-                    <li>telefono</li>
-                    <li>correo</li>
-                    <li>sucursales</li>
-                </ul>
-            </did>
-        </di>
-
+        <p class="copy">© Copyright 2023</p>
+        <p class="copy">
+            Derecho de autor:
+            <a href="" target="_blank">CapitalBANK</a>
+            Terminos y Condiciones:
+            <a href="./terminosYCondiciones.html" target="_blank">CapitalBANK</a>
+            Politicas de privacidad:
+            <a href="./politicas.html" target="_blank">CapitalBANK</a>
+        </p>
     </footer>
 
 
