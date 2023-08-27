@@ -1,76 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Home Banking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-            <button id="menu-btn">Menu</button>
-            <div class="navbar-title" style="font-family: 'Audiowide'">BancPilier</div>
+      <div class="navbar">
+        <button id="menu-btn">Menu</button>
+        <div class="navbar-title" style="font-family: 'Audiowide'">
+          BancPilier
         </div>
+      </div>
 
-        <div id="menu">
-            <a href="./perfil.html">Perfil</a>
-            <a href="./homepage.html">Inicio</a>
-            <a href="./cuentas.html">Cuentas</a>
-            <a href="./transferencias.html">Tranferencias</a>
-            <a href="./pagos.html">Pagos</a>
-        </div>
+      <div id="menu">
+        <a href="./perfil.html">Perfil</a>
+        <a href="./homepage.html">Inicio</a>
+        <a href="./cuentas.html">Cuentas</a>
+        <a href="./transferencias.html">Tranferencias</a>
+        <a href="./pagos.html">Pagos</a>
+      </div>
     </header>
-    <div class="title pt-3">
-    <h2 class="text-center" style="font-family: 'Audiowide'">BancPilier</h2>
-    </div>
-    <div class="w-50">
-        <h3 class="text-uppercase">Transferencias</h3>
-        <div class="Acciones">
-        <button type="button" class="btn btn-success">
-            Transferir con Alias, CBU o CVU
+    <div class="TransMain">
+      <h3>Transferencias</h3>
+      <div class="Acciones">
+        <button type="button" class="btn1">
+          Transferir con Alias, CBU o CVU
         </button>
-
-        <button type="button" class="btn btn-success">Ingresar Dinero</button>
-        </div>
-        <br />
-        <div class="transContactos">
+        <button type="button" class="btn2">Ingresar Dinero</button>
+      </div>
+      <br />
+      <div class="transContactos">
         <h4>Transferir a contactos</h4>
         <div class="row">
-            <p class="col-lg fs-4">Contactos</p>
-            <button type="button" class="col-lg-3 btn btn-primary">
-            Añadir contacto
-            </button>
+          <button type="button" class="btn2">Añadir contacto</button>
         </div>
-        <div class="tablaContactos mt-2 border rounded text-center">
-            <div
-            class="card m-3 d-flex flex-column align-items-center"
-            style="width: 10rem; text-align: center"
-            >
-            <div
-                class="rounded-circle mt-3"
-                style="
-                background-color: rgb(51, 51, 51);
-                width: 4rem;
-                height: 4rem;
-                text-align: center;
-                "
-            >
-                <h2 class="mt-2 text-light">AA</h2>
+        <div class="tablaContactos">
+          <div class="card">
+            <div class="rounded-circle">
+              <h2 class="">AA</h2>
             </div>
             <div class="card-body">
-                <h5 class="card-title">Aldo Andres</h5>
-
-                <a href="#" class="btn btn-primary">Transferir</a>
+              <h5 class="card-title">Aldo Andres</h5>
+              <a href="#" class="btn">Transferir</a>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </div>
     <script src="js/js.js"></script>
-</body>
+  </body>
 </html>
