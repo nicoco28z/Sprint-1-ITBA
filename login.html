@@ -13,11 +13,11 @@
 <body>
     <header>
         <div class="navbar">
-            <button id="menu-btn">Menu</button>
+            <button id="menu-btn" style="display: none;">Menu</button>
             <div class="navbar-title" style="font-family: 'Audiowide'" >BancPilier</div>
         </div>
 
-        <div id="menu">
+        <div id="menu" style="display: none;">
             <a href="./perfil.html">Perfil</a>
             <a href="./homepage.html">Inicio</a>
             <a href="./cuentas.html">Cuentas</a>
@@ -36,12 +36,11 @@
                 <input type="text" id="usuario" name="usuario"><br>
 
                 <label for="contraseña">Contraseña</label><br>
-                <input type="password" id="contraseña" name="contraseña"><br>
+                <input type="password" id="contrasena" name="contrasena"><br>
 
-                <button type="submit">Iniciar Sesión</button>
-                
-                <p>¿Aun no tiene cuenta?</p>
-                <a href="registrarse.html">Registrate acá</a>
+                <p id="error"></p>
+
+                <button onclick="login()" >Iniciar Sesión</button>
         </section>
     </main>
 
@@ -50,6 +49,10 @@
         <p class="copy">
             Derecho de autor:
             <a href="" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
+            Terminos y Condiciones:
+            <a href="./terminosYCondiciones.html" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
+            Politicas de privacidad:
+            <a href="./politicas.html" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
         </p>
     </footer>
     <script src="./js/js.js"></script>
