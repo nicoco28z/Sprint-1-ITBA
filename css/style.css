@@ -16,6 +16,19 @@ body {
     overflow: hidden;
 }
 
+.btnLogin{
+    background-color: #2d6073;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: large;
+    transition: left 0.3s ease-in-out;
+}
+
+.btnLogin a{
+  color: white;
+}
+
 .navbar-title {
     text-align: center;
     font-size: 24px;
@@ -174,7 +187,6 @@ th {
     flex-direction: row;
     justify-content: space-between;
 }
-
 /* login */
 
 #titulo {
@@ -231,4 +243,151 @@ th {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+
+/*TRANSFERENCIAS*/
+
+button {
+  transition-duration: 0.5s;
+}
+
+.btn1 {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #65b8a6;
+  background-color: #2d6073;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  width: 14%;
+  font-size: auto;
+}
+.btn2 {
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #65b8a6;
+  background-color: #2d6073;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  width: 8%;
+}
+
+.btn1:hover, .btn2:hover {
+  background-color: #ffffff;
+  border: 1;
+  color: #1f192f;
+  border-color: #1f192f;
+  border-width: 1px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .btn1,
+  .btn2 {
+    width: 100px;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .btn1,
+  .btn2 {
+    width: 100px;
+    float: left;
+  }
+}
+
+.tablaContactos {
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  display: grid;
+  max-width: 700px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-left: 25%; 
+  margin-top: 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+  background-color: #b5e8c3;
+  position: relative;
+  align-content: center;
+  width: 60%;
+  border-radius: 5px;
+  margin: 7px;
+}
+
+.contactos {
+  position: relative;
+}
+
+table {
+  width: 30%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#perfil{
+  background-color: #65b8a682;
+  color: #ffffff;
+  
+}
+
+
+/* Estilos para los botones de acciones */
+.Acciones {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Acciones button {
+  margin: 5px;
+}
+
+/* Estilos para la sección de contactos */
+.transContactos {
+  margin-top: 20px;
+}
+
+.transContactos h4 {
+  font-size: 1.5rem;
+}
+
+.TransMain h3 {
+  font-size: 2rem;
+}
+
+
+.rounded-circle {
+  background-color: #f0f7da;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-top: 10px;
+  color: #1f192f;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  margin-top: 10px;
 }
