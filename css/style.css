@@ -26,7 +26,7 @@ body {
 }
 
 .btnLogin a{
-  color: white;
+    color: white;
 }
 
 .navbar-title {
@@ -62,7 +62,7 @@ body {
     transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
 }
 
-#menu-btn {
+#menu-btn, #menu-btn-salir {
     position: absolute;
     top: 5px;
     left: 10px;
@@ -74,9 +74,9 @@ body {
     transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
 }
 
-#menu-btn.active {
+#menu-btn.active, #menu-btn-salir.active {
     position: fixed;
-    left: 10000 px;
+    left: 260 px;
 }
 
 /* estilos para elementos del menu */
