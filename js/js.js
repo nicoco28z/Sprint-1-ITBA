@@ -151,3 +151,26 @@ function limpiarTabla() {
 
     tabla.appendChild(columnaHead)
 }
+
+
+//Login
+const datos = {usuario: "admin", contrasena: "admin"}
+function login(){
+    let usuario = document.getElementById("usuario")
+    usuario = usuario.value
+
+    let contrasena = document.getElementById("contrasena")
+    contrasena = contrasena.value
+
+    let error = document.getElementById("error")
+
+    if(usuario == datos.usuario){
+        if(contrasena === datos.contrasena){
+            location.href = "../index.html"
+        }else {
+            error.innerHTML = "Usuario y/o contraseña no validos."
+        }
+    }else{
+        error.innerHTML = "Usuario y/o contraseña no validos."
+    }
+}
