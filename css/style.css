@@ -37,9 +37,21 @@ body {
     left: 0; /* muestra el menu */
 }
 
+#ingresar-btn{
+    position: absolute;
+    top: 27px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
+}
+
 #menu-btn {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 10px;
     background-color: #333;
     color: white;
@@ -50,18 +62,23 @@ body {
 }
 
 #menu-btn.active {
-    left: 260px; /* movimiento del boton al lado del menu */
+    position: fixed;
+    left: 10000 px;
 }
 
 /* estilos para elementos del menu */
+#opciones-menu{
+    padding-top: 38px;
+}
+
 #menu a {
     display: block;
     text-align: center;
-    padding: 14px 0;
+    padding: 10px 0;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s;
-    margin-top: 40px; /* margen superior para bajar los enlaces del menu */
+    margin-top: 20px; /* margen superior para bajar los enlaces del menu */
 }
 
 #menu a:hover {
