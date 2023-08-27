@@ -58,22 +58,26 @@ function convertirMoneda() {
         usd: {
             eur: 0.93,
             ars: 350.19,
-            yen: 146.44
+            yen: 146.44,
+            usd: 1
         },
         eur: {
             usd: 1.08,
             ars: 378.08,
-            yen: 158.09
+            yen: 158.09,
+            eur: 1
         },
         ars: {
             usd: 0.0029,
             eur: 0.0026,
-            yen: 0.42
+            yen: 0.42,
+            ars: 1
         },
         yen: {
             usd: 0.0068,
             eur: 0.0063,
-            ars: 2.39
+            ars: 2.39,
+            yen: 1
         }
     };
     
@@ -168,7 +172,7 @@ function login(){
 
     if(usuario == datos.usuario){
         if(contrasena === datos.contrasena){
-            location.href = "../index.html"
+            location.href = "../perfil2.html"
         }else {
             error.innerHTML = "Usuario y/o contraseña no validos."
         }
