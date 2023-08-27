@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - BancPilier</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <button id="menu-btn">Menu</button>
+            <div class="navbar-title" style="font-family: 'Audiowide'">BancPilier</div>
+        </div>
+
+        <div id="menu">
+            <a href="./perfil.html">Perfil</a>
+            <a href="./homepage.html">Inicio</a>
+            <a href="./cuentas.html">Cuentas</a>
+            <a href="./transferencias.html">Tranferencias</a>
+            <a href="./pagos.html">Pagos</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="carousel-container">
+            <div id="carousel" class="carousel-slide">
+                <img src="img/imagen1.png" alt="Imagen 1" width="500px">
+                <img src="img/imagen2.png" alt="Imagen 2" width="500px">
+                <img src="img/imagen3.png" alt="Imagen 3" width="500px">
+            </div>
+            <button id="prevBtn" class="carousel-btn">Anterior</button>
+            <button id="nextBtn" class="carousel-btn">Siguiente</button>
+        </div>
+
+        <div id="movimientos">
+            <h2>Movimientos</h2>
+            <table>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                </tr>
+                <tr>
+                    <td>01/08/2023</td>
+                    <td>Compra en línea</td>
+                    <td>$100.00</td>
+                </tr>
+                <tr>
+                    <td>05/08/2023</td>
+                    <td>Depósito</td>
+                    <td>$500.00</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p class="copy">© Copyright 2023</p>
+        <p class="copy">
+            Derecho de autor:
+            <a href="" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
+            Terminos y Condiciones:
+            <a href="./terminosYCondiciones.html" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
+            Politicas de privacidad:
+            <a href="./politicas.html" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
+        </p>
+    </footer>
+    <script src="js/js.js"></script>
+</body>
+</html>
