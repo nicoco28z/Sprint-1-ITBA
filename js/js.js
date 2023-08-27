@@ -168,7 +168,7 @@ function login(){
 
     if(usuario == datos.usuario){
         if(contrasena === datos.contrasena){
-            location.href = "../index.html"
+            location.href = "../perfil2.html"
         }else {
             error.innerHTML = "Usuario y/o contraseña no validos."
         }
