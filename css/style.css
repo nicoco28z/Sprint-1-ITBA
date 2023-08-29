@@ -44,6 +44,7 @@ body {
     top: 0;
     left: -250px; /* menu arranca oculto */
     transition: left 0.3s ease-in-out;
+    z-index: 2
 }
 
 #menu.active {
@@ -283,22 +284,6 @@ button {
   font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
-  .btn1,
-  .btn2 {
-    width: 100px;
-    float: left;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  .btn1,
-  .btn2 {
-    width: 100px;
-    float: left;
-  }
-}
-
 .tablaContactos {
   border: 1px solid rgb(182, 182, 182);
   border-radius: 10px;
@@ -438,4 +423,55 @@ td {
   height: 500px;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  .btn1,
+  .btn2 {
+    width: 100px;
+    float: left;
+  }
+  /*Menu*/
+  .padre{
+    display: block;
+  }
+  .hijo1,.hijo2{
+    padding: 5px;
+  }
+
+  /*Login*/
+  #sectioninput label {
+    font-size: 4vw;
+}
+
+#sectioninput input {
+    width: 40vw;
+    height: 5vw;
+    margin-bottom: 3vw;
+}
+
+#sectioninput button {
+    font-size: 3vw;
+    height: 4vh;
+    width: 30vw;
+}
+
+#titulo img {
+  height: 10vw;
+  width: 10vw;
+  margin-right: 10px;
+}
+
+#titulo h1 {
+  align-items: center;
+  font-size: 7vw;
+}
+}
+
+@media screen and (max-width: 1080px) {
+  .btn1,
+  .btn2 {
+    width: 100px;
+    float: left;
+  }
 }
