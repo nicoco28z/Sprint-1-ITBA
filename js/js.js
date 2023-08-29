@@ -4,7 +4,6 @@ const nextBtn = document.getElementById("nextBtn");
 
 const menu = document.getElementById("menu");
 const menuBtn = document.getElementById("menu-btn");
-const menuBtnSalir = document.getElementById("menu-btn-salir");
 
 let currentIndex = 0;
 const images = document.querySelectorAll("#carousel img");
@@ -43,7 +42,6 @@ function updateCarousel() {
 }
 
 menuBtn.addEventListener("click", () => {
-  menuBtnSalir.classList.toggle("active");
   menu.classList.toggle("active");
   menuBtn.classList.toggle("active");
 });
