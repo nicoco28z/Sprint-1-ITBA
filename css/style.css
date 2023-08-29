@@ -10,148 +10,151 @@ body {
 
 /* barra de navegacion */
 .navbar {
-    background-color: #333;
-    color: white;
-    overflow: hidden;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
 }
 
-.btnLogin{
-    background-color: #2d6073;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: large;
-    transition: left 0.3s ease-in-out;
+.btnLogin {
+  background-color: #2d6073;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: large;
+  transition: left 0.3s ease-in-out;
 }
 
-.btnLogin a{
-    color: white;
+.btnLogin a {
+  color: white;
 }
 
 .navbar-title {
-    text-align: center;
-    font-size: 24px;
-    padding: 14px 0;
+  text-align: center;
+  font-size: 24px;
+  padding: 14px 0;
 }
 
 /* menu */
 #menu {
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    left: -250px; /* menu arranca oculto */
-    transition: left 0.3s ease-in-out;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: -250px; /* menu arranca oculto */
+  transition: left 0.3s ease-in-out;
 }
 
 #menu.active {
-    left: 0; /* muestra el menu */
+  left: 0; /* muestra el menu */
 }
 
-#ingresar-btn{
-    position: absolute;
-    top: 27px;
-    left: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
+#ingresar-btn {
+  position: absolute;
+  top: 27px;
+  left: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
 }
 
-#menu-btn, #menu-btn-salir {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
+#menu-btn,
+#menu-btn-salir {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: left 0.3s ease-in-out; /* transicion para el boton del menu */
 }
 
-#menu-btn.active, #menu-btn-salir.active {
-    position: fixed;
-    left: 260 px;
+#menu-btn.active,
+#menu-btn-salir.active {
+  position: fixed;
+  left: 260 px;
 }
 
 /* estilos para elementos del menu */
-#opciones-menu{
-    padding-top: 38px;
+#opciones-menu {
+  padding-top: 38px;
 }
 
 #menu a {
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin-top: 20px; /* margen superior para bajar los enlaces del menu */
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* margen superior para bajar los enlaces del menu */
 }
 
 #menu a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 /* carousel de fotos */
 .carousel-container {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .carousel-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%; /* establece un ancho fijo para el contenedor */
-    max-height: 400px; /* ajusta la altura maxima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%; /* establece un ancho fijo para el contenedor */
+  max-height: 400px; /* ajusta la altura maxima */
 }
 
 .carousel-slide img {
-    width: 600px;
-    height: 100%;
-    object-fit: cover;
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel-btn {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
 }
 
 .carousel-btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* tabla de movimientos */
 table {
-    width: 1000px;
-    margin: 0 auto; /* centra la tabla */
-    border-collapse: collapse;
-    margin-top: 20px;
-    border-radius: 10px; /*  puntas redondeadas de la tabla */
+  width: 1000px;
+  margin: 0 auto; /* centra la tabla */
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px; /*  puntas redondeadas de la tabla */
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 /* cuentas */
@@ -160,6 +163,7 @@ th {
     display: block;
     width: 100%;
     justify-content: center;
+    margin-left: 4vw;
 }
 
 .cuentas {
@@ -181,33 +185,33 @@ th {
     margin-left: 5%;
 }
 
-.cuenta p{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.cuenta p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 /* login */
 
 #titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
 }
 
 #titulo img {
-    height: 7vw;
-    width: 7vw;
-    margin-right: 10px;
+  height: 7vw;
+  width: 7vw;
+  margin-right: 10px;
 }
 
 #titulo h1 {
-    align-items: center;
-    font-size: 3vw;
+  align-items: center;
+  font-size: 3vw;
 }
 
 #sectioninput {
-    text-align: center;
+  text-align: center;
 }
 
 #sectioninput label {
@@ -216,12 +220,12 @@ th {
 }
 
 #sectioninput input {
-    width: 15vw;
-    height: 1.4vw;
-    background-color:bisque;
-    border-radius: 5px;
-    border-style: hidden;
-    margin-bottom: 1vw;
+  width: 15vw;
+  height: 1.4vw;
+  background-color: bisque;
+  border-radius: 5px;
+  border-style: hidden;
+  margin-bottom: 1vw;
 }
 
 #sectioninput button {
@@ -235,13 +239,12 @@ th {
 } 
 
 #footerderechos {
-    bottom: 0;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  bottom: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
 
 /*TRANSFERENCIAS*/
 
@@ -271,7 +274,8 @@ button {
   width: 8%;
 }
 
-.btn1:hover, .btn2:hover {
+.btn1:hover,
+.btn2:hover {
   background-color: #ffffff;
   border: 1;
   color: #1f192f;
@@ -284,15 +288,13 @@ button {
   .btn1,
   .btn2 {
     width: 100px;
-    float: left;
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 1080px) {
   .btn1,
   .btn2 {
     width: 100px;
-    float: left;
   }
 }
 
@@ -303,7 +305,7 @@ button {
   max-width: 700px;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 10px;
-  margin-left: 25%; 
+  margin-left: 25%;
   margin-top: 5px;
 }
 
@@ -320,7 +322,8 @@ button {
 }
 
 .contactos {
-  position: relative;
+  justify-content: center;
+  display: inline;
 }
 
 table {
@@ -335,25 +338,26 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-#perfil{
+#perfil {
   background-color: #65b8a682;
   color: #000000;
 }
 
-
 /* Estilos para los botones de acciones */
-.Acciones {
-  text-align: center;
+.acciones {
   margin-top: 20px;
+  justify-content: center;
+  display: flex;
 }
 
-.Acciones button {
+.acciones button {
   margin: 5px;
 }
 
 /* Estilos para la sección de contactos */
 .transContactos {
-  margin-top: 20px;
+  display: grid;
+  justify-content: center;
 }
 
 .transContactos h4 {
@@ -364,6 +368,13 @@ td {
   font-size: 2rem;
 }
 
+.TransMain {
+  background-color: #daf4f7bb;
+  max-width: 800px;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
 
 .rounded-circle {
   background-color: #f0f7da;
@@ -386,4 +397,58 @@ td {
 
 .card-body {
   margin-top: 10px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  align-items: end;
+  min-height: 7rem;
+}
+
+#service {
+  min-height: 7rem;
+}
+
+.card-servicio {
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.card-servicio h4 {
+  font-size: medium;
+}
+
+#service {
+  background-color: #65b8a6;
+  color: #1f192f;
+}
+
+.btnTransferir {
+  margin-bottom: 0;
+}
+
+.tablaServicios {
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  display: grid;
+  max-width: 600px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 10px;
+  justify-items: center;
+}
+
+.contactosMain {
+  background-color: #daf4f7bb;
+  border-radius: 20px;
+  max-width: 800px;
+  text-align: center;
+  display: inline-table;
+}
+
+.divOculto {
+  display: none;
+}
+
+.divVisible {
+  display: block;
 }

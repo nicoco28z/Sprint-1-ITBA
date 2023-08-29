@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,49 +15,59 @@
 
 <body style="font-family: 'Kanit', sans-serif;">
     <header>
-        <div class="navbar">
-            <button id="menu-btn" style="display: none;">Menu</button>
-            <div class="navbar-title" style="font-family: 'Audiowide'" >BancPilier</div>
+      <div class="navbar">
+        <button id="menu-btn" style="display: none">Menu</button>
+        <div class="navbar-title" style="font-family: 'Audiowide'">
+          BancPilier
         </div>
+      </div>
 
-        <div id="menu" style="display: none;">
-            <a href="./perfil.html">Perfil</a>
-            <a href="./homepage.html">Inicio</a>
-            <a href="./cuentas.html">Cuentas</a>
-            <a href="./transferencias.html">Tranferencias</a>
-            <a href="./pagos.html">Pagos</a>
-        </div>
+      <div id="menu" style="display: none">
+        <a href="./homepage.html">Inicio</a>
+      </div>
     </header>
     <main>
-        <section id="titulo">
-            <img src="img\logo.png" alt="Logo BancPilier">
-            <h1 style="font-family: 'Audiowide'">BancPilier</h1>
-        </section>
+      <section id="titulo">
+        <img src="img\logo.png" alt="Logo BancPilier" />
+        <h1 style="font-family: 'Audiowide'">BancPilier</h1>
+      </section>
 
-        <section id="sectioninput">
-                <label for="usuario">Usuario</label><br>
-                <input type="text" id="usuario" name="usuario"><br>
+      <section id="sectioninput">
+        <label for="usuario">Usuario</label><br />
+        <input type="text" id="usuario" name="usuario" /><br />
 
-                <label for="contraseña">Contraseña</label><br>
-                <input type="password" id="contrasena" name="contrasena"><br>
+        <label for="contraseña">Contraseña</label><br />
+        <input type="password" id="contrasena" name="contrasena" /><br />
 
-                <p id="error"></p>
+        <p id="error"></p>
 
-                <button onclick="login()" >Iniciar Sesión</button>
-        </section>
+        <button onclick="login()">Iniciar Sesión</button>
+      </section>
     </main>
 
     <footer>
-        <p class="copy">© Copyright 2023</p>
-        <p class="copy">
-            Derecho de autor:
-            <a href="" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
-            Terminos y Condiciones:
-            <a href="./terminosYCondiciones.html" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
-            Politicas de privacidad:
-            <a href="./politicas.html" target="_blank" style="font-family: 'Audiowide'">BancPilier</a>
-        </p>
+      <p class="copy">© Copyright 2023</p>
+      <p class="copy">
+        Derecho de autor:
+        <a href="" target="_blank" style="font-family: 'Audiowide'"
+          >BancPilier</a
+        >
+        Terminos y Condiciones:
+        <a
+          href="./terminosYCondiciones.html"
+          target="_blank"
+          style="font-family: 'Audiowide'"
+          >BancPilier</a
+        >
+        Politicas de privacidad:
+        <a
+          href="./politicas.html"
+          target="_blank"
+          style="font-family: 'Audiowide'"
+          >BancPilier</a
+        >
+      </p>
     </footer>
     <script src="./js/js.js"></script>
-</body>
+  </body>
 </html>

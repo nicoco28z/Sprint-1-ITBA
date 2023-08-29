@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BancPilier</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,50 +15,78 @@
 
 <body style="font-family: 'Kanit', sans-serif;">
     <header>
-        <div class="navbar">
-            <button id="menu-btn">Menu</button>
-            <div class="navbar-title" style="font-family: 'Audiowide'">BancPilier</div>
+      <div class="navbar">
+        <button id="menu-btn">Menu</button>
+        <div class="navbar-title" style="font-family: 'Audiowide'">
+          BancPilier
         </div>
+      </div>
 
-        <div id="menu">
-            <a href="./perfil.html">Perfil</a>
-            <a href="./homepage.html">Inicio</a>
-            <a href="./cuentas.html">Cuentas</a>
-            <a href="./transferencias.html">Tranferencias</a>
-            <a href="./pagos.html">Pagos</a>
-        </div>
+      <div id="menu">
+        <a href="./perfil.html">Perfil</a>
+        <a href="./homepage.html">Inicio</a>
+        <a href="./cuentas.html">Cuentas</a>
+        <a href="./transferencias.html">Tranferencias</a>
+        <a href="./pagos.html">Pagos</a>
+        <a href="./herramientas.html">Herramientas Adicionales</a>
+        <a href="./login.html" id="cerrarSeccion">Cerrar Sección</a>
+      </div>
     </header>
-    <div class="row">
-        <div class="title pt-3">
-            <h2 class="text-center" style="font-family: 'Audiowide'">BancPilier</h2>
+    <div class="contactosMain">
+        <h1>PAGOS</h1>
+        <div class="acciones">
+          <button type="button" class="btn2" style="font-size:medium;">
+            Nuevo Pago
+          </button>
         </div>
-        <div class="w-50">
-            <h3 class="text-uppercase">Pagos</h3>
-            <div class="Acciones">
-            <button type="button" class="btn btn-success">
-                Nuevo pago
-            </button>
+        <br />
+        <div class="transContactos">
+          <h4>Pagos a vencer</h4>
+          <div class="row">
+            <button type="button" class="btn2">Agregar servicio</button>
+          </div>
+          <div class="tablaServicios">
+            <div class="card" id="service">
+              <h5 class="card-title">Factura de Luz</h5>
+              <div class="card-servicio">
+                <h4>$1000.00</h4>
+                <a href="#">Pagar</a>
+              </div>
             </div>
-            <br />
-            <div class="transContactos">
-            <h4>Pagos a vencer</h4>
-            <div class="row">
-                <button type="button" class="col-lg-3 btn btn-primary">
-                Agregar servicio
-                </button>
+            <div class="card" id="service">
+              <h5 class="card-title">Factura de Gas</h5>
+              <div class="card-servicio">
+                <h4>$2500.00</h4>
+                <a href="#">Pagar</a>
+              </div>
             </div>
-            <div class="tablaContactos mt-2 border rounded text-center">
-                <div
-                class="card m-3 d-flex flex-column align-items-center"
-                style="width: 10rem; text-align: center"
-                >
-                <div class="card-body">
-                    <h5 class="card-title">Aldo Andres</h5>
-                </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <footer>
+      <p class="copy">© Copyright 2023</p>
+      <p class="copy">
+        Derecho de autor:
+        <a href="" target="_blank" style="font-family: 'Audiowide'"
+          >BancPilier</a
+        >
+        Terminos y Condiciones:
+        <a
+          href="./terminosYCondiciones.html"
+          target="_blank"
+          style="font-family: 'Audiowide'"
+          >BancPilier</a
+        >
+        Politicas de privacidad:
+        <a
+          href="./politicas.html"
+          target="_blank"
+          style="font-family: 'Audiowide'"
+          >BancPilier</a
+        >
+      </p>
+    </footer>
     <script src="js/js.js"></script>
-</body>
+  </body>
 </html>
