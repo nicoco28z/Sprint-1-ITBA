@@ -12,12 +12,14 @@
 <body>
     <header>
         <div class="navbar">
-            <button id="menu-btn">Menu</button>
-            <button id="ingresar-btn">Ingresar</button>
+            <!-- <button id="menu-btn">Menu</button> -->
+            <button class="btnLogin" id="menu-btn-salir" onclick="">
+                <a class="" href="./login.html">Ingresar</a>
+                </button>
             <div class="navbar-title" style="font-family: 'Audiowide'">BancPilier</div>
         </div>
 
-        <div id="menu">
+        <!-- <div id="menu">
             <button id="menu-btn-salir">Salir</button>
             <div id="opciones-menu">
                 <a href="./perfil.html">Perfil</a>
@@ -26,22 +28,36 @@
                 <a href="./transferencias.html">Tranferencias</a>
                 <a href="./pagos.html">Pagos</a>
             </div>
-        </div>
+        </div> -->
     </header>
     <main>
-        <section class="padre"> 
-        <div class="hijo1">
-            <h1  id="titulo" style="font-family: 'Audiowide'">BancPilier<h1>
-                <P> somos un banco bla bla bla bla bla  a bla</P>
-                <button class="btnLogin" onclick="">
-                <a class="" href="./login.html">Ingresar</a>
-                </button>
-        </div>
-        <div class="hijo2">
-            <img class="banco" src="">
-        </did>
-    </section>
-        <section>
+        <section class="padre">
+            <div class="hijo1">
+                <h1 id="titulo" style="font-family: 'Audiowide'">BancPilier</h1>
+                <section id="textoInfo-homepage">
+                    <p>En Bancpilier, nuestra visión es ser el socio financiero confiable y líder en innovación para nuestros clientes.
+                        Nos esforzamos por ofrecer soluciones financieras personalizadas y accesibles que impulsen la prosperidad y el 
+                        bienestar de las personas y las empresas. A través de la tecnología avanzada y un enfoque centrado en el cliente,
+                        buscamos transformar la manera en que las personas interactúan con sus finanzas, brindando comodidad y seguridad 
+                        en cada paso del camino. Al mismo tiempo, estamos comprometidos con la sostenibilidad y la responsabilidad social,
+                        contribuyendo positivamente a las comunidades en las que operamos. Nuestro equipo apasionado y dedicado trabaja 
+                        incansablemente para lograr una excelencia continua y para superar las expectativas en todo lo que hacemos. 
+                        Bancpilier se destaca por ser un faro de confianza, ética y progreso en el mundo financiero.</p>
+                </section>
+            </div>
+        
+            <div class="hijo2">
+                <div class="carousel-container">
+                    <div id="carousel" class="carousel-slide">
+                        <img class="imagen" src="img/bancopordentro.jpg" alt="Imagen 1">
+                        <img class="imagen" src="img/reunionadministrativa.jpg" alt="Imagen 2">
+                    </div>
+                </div>
+                <button id="prevBtn" class="carousel-btn"><</button>
+                <button id="nextBtn" class="carousel-btn">></button>
+            </div>
+        </section>
+        <!-- <section>
             <h1>Calculadora de Monedas</h1>
 
             <label for="cantidad">Cantidad:</label>
@@ -88,7 +104,7 @@
             <hr>
             <table id="tablaCuotas" border>
             </table>
-        </section>
+        </section> -->
     </main>
     <footer>
         <p class="copy">© Copyright 2023</p>

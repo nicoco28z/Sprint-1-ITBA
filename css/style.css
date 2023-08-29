@@ -391,3 +391,51 @@ td {
 .card-body {
   margin-top: 10px;
 }
+
+.padre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilos del texto (a la izquierda) */
+.hijo1 {
+  flex: 0.5;
+  padding: 20px;
+}
+
+/* Estilos del carrusel de fotos (a la derecha) */
+.hijo2 {
+  flex: 0.7;
+  padding: 20px;
+}
+
+/* Estilos para el carrusel de fotos */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.carousel-btn {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.carousel-slide .imagen {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
