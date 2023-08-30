@@ -284,15 +284,18 @@ button {
   font-weight: bold;
 }
 
+
 .tablaContactos {
   border: 1px solid rgb(182, 182, 182);
   border-radius: 10px;
   display: grid;
-  max-width: 700px;
+  max-width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 10px;
-  margin-left: 25%; 
+  margin-left: 15%; 
+  margin-right: 15%;
   margin-top: 5px;
+  padding: 15px;
 }
 
 .card {
@@ -302,9 +305,8 @@ button {
   background-color: #b5e8c3;
   position: relative;
   align-content: center;
-  width: 60%;
+  width: 100%;
   border-radius: 5px;
-  margin: 7px;
 }
 
 .contactos {
@@ -425,11 +427,20 @@ td {
   object-fit: cover;
 }
 
+/*Herramientas*/
+.divOculto {
+  display: none;
+}
+
+.divVisible {
+  display: block;
+}
+
 @media screen and (max-width: 480px) {
   .btn1,
   .btn2 {
     width: 100px;
-    float: left;
+    float: center;
   }
   /*Menu*/
   .padre{
@@ -472,6 +483,6 @@ td {
   .btn1,
   .btn2 {
     width: 100px;
-    float: left;
+    float: center;
   }
 }
