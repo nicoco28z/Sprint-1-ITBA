@@ -167,7 +167,6 @@ th {
     display: block;
     width: 100%;
     justify-content: center;
-    margin-left: 4vw;
 }
 
 .cuentas {
@@ -190,10 +189,10 @@ th {
 }
 
 .cuenta p{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 /* login */
 
 #titulo {
