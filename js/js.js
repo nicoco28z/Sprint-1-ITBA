@@ -173,7 +173,7 @@ function login() {
 
   if (usuario == datos.usuario) {
     if (contrasena === datos.contrasena) {
-      location.href = "../perfil.html";
+      location.href = "./perfil.html";
     } else {
       error.innerHTML = "Usuario y/o contraseña no validos.";
     }
